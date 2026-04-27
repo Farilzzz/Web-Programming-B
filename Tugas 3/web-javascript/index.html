@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inline JavaScript</title>
+</head>
+
+<body>
+    <button onclick="alert('Hello World!')">Klik Saya</button>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Internal JavaScript</title>
+</head>
+
+<body>
+    <h1>Halo Mahasiswa!</h1>
+    <button id="btn">Klik Saya</button>
+    <script>
+        document.getElementById('btn').onclick = function () {
+            alert('Hello World!');
+        };
+    </script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>External JavaScript</title>
+</head>
+
+<body>
+    <button onclick="sayHello()">Klik Saya</button>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Latihan JavaScript</title>
+
+</head>
+
+<body>
+    <h1 id="judul">Latihan JavaScript Dasar</h1>
+    <button onclick="ubahTeks()">Klik Saya</button>
+    <script>
+        function ubahTeks() {
+            document.getElementById("judul").innerText = "Hello World!";
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Sederhana dengan Array</title>
+</head>
+
+<body>
+    <h2>Navigasi Konten</h2>
+    <button onclick="tampilkanArtikel(0)">1</button>
+    <button onclick="tampilkanArtikel(1)">2</button>
+    <button onclick="tampilkanArtikel(2)">3</button>
+    <hr>
+    <div id="konten">
+        <h3>Judul Artikel</h3>
+        <p>Isi artikel akan tampil di sini.</p>
+    </div>
+    <script>
+        const artikel = [
+            {
+                judul: "Artikel 1",
+                isi: "Ini adalah isi artikel pertama."
+            },
+            {
+                judul: "Artikel 2",
+                isi: "Ini adalah isi artikel kedua."
+            },
+            {
+                judul: "Artikel 3",
+                isi: "Ini adalah isi artikel ketiga."
+            }
+        ];
+        function tampilkanArtikel(index) {
+            document.getElementById("konten").innerHTML =
+                "<h3>" + artikel[index].judul + "</h3>" +
+                "<p>" + artikel[index].isi + "</p>";
+        }
+    </script>
+</body>
+
+</html>
